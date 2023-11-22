@@ -11,13 +11,18 @@ using System.Windows.Shapes;
 
 namespace wpf_calc;
 
-/// <summary>
-/// Interaction logic for MainWindow.xaml
-/// </summary>
 public partial class MainWindow : Window
 {
-    public MainWindow()
+    public partial class MainWindow : Window
     {
-        InitializeComponent();
+        public MainWindow()
+        {
+            var services = new ServiceCollection();
+
+            var provider = services.BuildServiceProvider();
+            
+            InitializeComponent();
+            DataContext = new CalcViewModel(provider.GetRequiredService<IMemory>());
+        }
     }
 }
