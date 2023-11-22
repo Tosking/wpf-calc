@@ -1,0 +1,5 @@
+Z:\home\taskavan\Документы\c#\Calculator-UnitTest\wpf-calc\bin\Release\net8.0-windows\publish\wpf-calc.exe
+Z:\home\taskavan\Документы\c#\Calculator-UnitTest\wpf-calc\bin\Release\net8.0-windows\publish\wpf-calc.dll
+Z:\home\taskavan\Документы\c#\Calculator-UnitTest\wpf-calc\bin\Release\net8.0-windows\publish\wpf-calc.deps.json
+Z:\home\taskavan\Документы\c#\Calculator-UnitTest\wpf-calc\bin\Release\net8.0-windows\publish\wpf-calc.runtimeconfig.json
+Z:\home\taskavan\Документы\c#\Calculator-UnitTest\wpf-calc\bin\Release\net8.0-windows\publish\wpf-calc.pdb
