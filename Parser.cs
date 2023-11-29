@@ -18,16 +18,25 @@ namespace wpf_calc{
         }
         public string Parse(string str)
         {
+            if(double.TryParse(str, out double res)){
+                return res.ToString();
+            }
             List<string?> elements = new List<string?>();
             string temp = "";
             char[] priority = {'*', '/', '+', '-'};
             int size = 0;
+            int posWithoutNum = 0;
             for(int i = 0; i < str.Length; i++){
                 string c = str[i].ToString();
 
                 if(int.TryParse(c, out int n) || c == ","){
+                    if(posWithoutNum > 1 || (posWithoutNum == 1 && i == 1 && "+-".Contains(str[i - 1]))){
+                        temp += str[i - 1];
+                    }
                     temp += c;
+                    posWithoutNum = 0;
                 }
+
                 else {
                     if(c == "("){
                         elements.Add(ParseBrackets(str.Substring(i+1)));
@@ -47,6 +56,7 @@ namespace wpf_calc{
                         elements.Add(c);
                         size++;
                         temp = "";
+                        posWithoutNum++;
                     }
                 }
             }

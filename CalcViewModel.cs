@@ -52,24 +52,20 @@ namespace wpf_calc
             {
                 return new RelayCommand(obj =>
                   {
-                      char[] pattern = { '+', '-', '/', '*' };
-                      int index = ParseStr.LastIndexOfAny(pattern);
-                      string operation = obj as string;
+                        char[] pattern = { '+', '-', '/', '*' };
+                        string operation = obj as string;
+                        if(ParseStr is null){
+                            if(operation == "-"){
+                                ParseStr += operation;
+                            }
+                        }
 
-                      if ("+-/*,".Contains(ParseStr[ParseStr.Length - 1].ToString()))
-                      {
-                          if (ParseStr.LastIndexOf(',') > 0 && operation == ",")
-                              return;
-                          ParseStr += operation;
-                      }
-                      else if (index > 0 && operation == "," && ParseStr.IndexOf(',', index) != -1)
-                      {
-                          return;
-                      }
-                      else if (index < 0 && operation =="," && ParseStr.Contains(','))
-                          return;
-                      else
-                          ParseStr += operation;
+                        else if ("+-/*,".Contains(ParseStr[ParseStr.Length - 1].ToString()))
+                        {
+                            return;
+                        }
+                        else
+                            ParseStr += operation;
                   });
             }
         }
