@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-Z:\home\taskavan\Документы\c#\Calculator-UnitTest\wpf-calc\obj\Debug\net8.0-windows\
+C:\wpf-calc\obj\Debug\net8.0-windows\
 wpf_calc
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-Z:\home\taskavan\Документы\c#\Calculator-UnitTest\wpf-calc\App.xaml
+C:\wpf-calc\App.xaml
 11407045341
 
-4551329192
-198-688555687
+8-1202131858
+200-949680470
 MainWindow.xaml;
 
 False

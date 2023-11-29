@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "skL73rzpcv0ON9ObnQ+FhFNcMLZv63+sE+SR8NlM0xUwoDksYKYK/bsITELA8UPY3Li/lAmRt5sWW58L7of0FA==",
+  "dgSpecHash": "lCon0PMuEypLG4EjCRgEKTUrOX5Xlz6VGz1AA1+8arezCXujwp86idqQI2X72JXcutAhy7H+a3fvlewCicvGXA==",
   "success": true,
   "projectFilePath": "C:\\wpf-calc\\wpf-calc.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\users\\taskavan\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\users\\taskavan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

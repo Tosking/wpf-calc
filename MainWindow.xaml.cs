@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿﻿using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -8,11 +10,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Collections.Generic;
 
 namespace wpf_calc;
-
-public partial class MainWindow : Window
-{
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -22,7 +22,6 @@ public partial class MainWindow : Window
             var provider = services.BuildServiceProvider();
             
             InitializeComponent();
-            DataContext = new CalcViewModel(provider.GetRequiredService<IMemory>());
+            DataContext = new CalcViewModel();
         }
     }
-}

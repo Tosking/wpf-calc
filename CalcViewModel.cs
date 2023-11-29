@@ -6,18 +6,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using wpf_calc;
 
-namespace Calculator
+namespace wpf_calc
 {
-    class CalcViewModel : INotifyPropertyChanged, INotifyDataErrorInfo
+    class CalcViewModel : INotifyPropertyChanged
     {
-        private static CalcModel _calcModel;
         private static Parser _parser = new Parser();
 
-        public event PropertyChangedEventHandler PropertyChanged;
-        public event EventHandler<DataErrorsChangedEventArgs> ErrorsChanged;
+        private static CalcModel _calcModel = new CalcModel();
 
-        private readonly IMemory _writer;
+        public event PropertyChangedEventHandler PropertyChanged;
         private readonly Dictionary<string, List<string>> _errorsByPropertyName = new Dictionary<string, List<string>>();
 
         CommandBinding commandBinding = new CommandBinding();
@@ -32,7 +31,6 @@ namespace Calculator
                 {
                     _calcModel.StringParse = value;
                     PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ParseStr)));
-                    ClearErrors(nameof(ParseStr));
                 }
             }
         }
@@ -42,9 +40,7 @@ namespace Calculator
             {
                 return new RelayCommand(obj =>
                 {
-                    string result = _parser.StartParsing(ParseStr);
-                    ValidateResultString(result);
-                    var hasError = GetErrors(nameof(ParseStr));
+                    string result = _parser.Parse(ParseStr);
                     ParseStr = _parser.Parse(ParseStr);
                 });
             }
@@ -64,7 +60,6 @@ namespace Calculator
                       {
                           if (ParseStr.LastIndexOf(',') > 0 && operation == ",")
                               return;
-                          ParseStr = ParseStr.Pop_Back();
                           ParseStr += operation;
                       }
                       else if (index > 0 && operation == "," && ParseStr.IndexOf(',', index) != -1)
@@ -87,8 +82,6 @@ namespace Calculator
                   {
                       string number = obj as string;
 
-                      if (ParseStr == "Error")
-                          ClearOut.Execute(null);
                       if (ParseStr != "0")
                           ParseStr += number;
                       else

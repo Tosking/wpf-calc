@@ -39,3 +39,8 @@ C:\wpf-calc\obj\Release\net8.0-windows\refint\wpf-calc.dll
 C:\wpf-calc\obj\Release\net8.0-windows\wpf-calc.pdb
 C:\wpf-calc\obj\Release\net8.0-windows\wpf-calc.genruntimeconfig.cache
 C:\wpf-calc\obj\Release\net8.0-windows\ref\wpf-calc.dll
+C:\wpf-calc\bin\Release\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\wpf-calc\bin\Release\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\wpf-calc\obj\Release\net8.0-windows\wpf-calc.csproj.AssemblyReference.cache
+C:\wpf-calc\obj\Release\net8.0-windows\wpf-calc.sourcelink.json
+C:\wpf-calc\obj\Release\net8.0-windows\wpf-calc.csproj.CopyComplete

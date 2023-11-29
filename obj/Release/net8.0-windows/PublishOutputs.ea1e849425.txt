@@ -3,3 +3,5 @@ C:\wpf-calc\bin\Release\net8.0-windows\publish\wpf-calc.dll
 C:\wpf-calc\bin\Release\net8.0-windows\publish\wpf-calc.deps.json
 C:\wpf-calc\bin\Release\net8.0-windows\publish\wpf-calc.runtimeconfig.json
 C:\wpf-calc\bin\Release\net8.0-windows\publish\wpf-calc.pdb
+C:\wpf-calc\bin\Release\net8.0-windows\publish\Microsoft.Extensions.DependencyInjection.dll
+C:\wpf-calc\bin\Release\net8.0-windows\publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll

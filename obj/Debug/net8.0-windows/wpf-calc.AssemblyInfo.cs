@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("wpf-calc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c0ed650d087f0f72ca9028cf100c348a3a23d07")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+310c04b55721c7005ac9da667ff2bf82c9cb49a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("wpf-calc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("wpf-calc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
