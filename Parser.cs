@@ -42,7 +42,7 @@ namespace wpf_calc{
                         elements.Add(ParseBrackets(str.Substring(i+1)));
                         while(c != ")"){
                             if((str.Length - 1) <= i)
-                                return "0";
+                                return "Error";
                             i++;
                             c = str[i].ToString();
                         }
@@ -63,8 +63,9 @@ namespace wpf_calc{
             elements.Add(temp);
             size++;
             double result = 0;
-            if(size <= 1){
-                return elements[0] ?? "Error";
+            elements.RemoveAll(item => item == null || item == "" || item == ")" || item == "(");
+            if(elements.Count() <= 2){
+                return elements.Count() == 0 ? "" : elements[0];
             }
             foreach(char op in priority){
                 while(true){
@@ -74,14 +75,16 @@ namespace wpf_calc{
                     double loper;
                     string? sign = elements[i];
                     double roper;
-                    if(!double.TryParse(elements[i - 1], out loper)){
-                        return result.ToString();
+                    if(i == 0)
+                        loper = 0;
+                    else if(!double.TryParse(elements[i - 1], out loper)){
+                        return "Error";
                     }
                     if(!double.TryParse(elements[i + 1], out roper)){
-                        return result.ToString();
+                        return "Error";
                     }
                     if(double.TryParse(elements[i], out double n)){
-                        return result.ToString();
+                        return "Error";
                     }
                     if(i == 1 && (elements[1] == "+" || elements[1] == "-")){
                         result += loper;

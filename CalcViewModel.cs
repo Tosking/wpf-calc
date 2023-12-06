@@ -70,6 +70,29 @@ namespace wpf_calc
             }
         }
 
+        public RelayCommand ClearStr
+        {
+            get
+            {
+                return new RelayCommand(obj =>
+                  {
+                        ParseStr = "";
+                  });
+            }
+        }
+
+        public RelayCommand Backspace
+        {
+            get
+            {
+                return new RelayCommand(obj =>
+                  {
+                        if(ParseStr != null && ParseStr != "")
+                            ParseStr = ParseStr.Remove(ParseStr.Length - 1);
+                  });
+            }
+        }
+
         public RelayCommand AddNumber
         {
             get

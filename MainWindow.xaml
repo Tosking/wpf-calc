@@ -145,10 +145,10 @@
 
 
         <Button BorderBrush="Transparent" FontSize="20"   Grid.Row="1" Grid.Column="0" 
-                Command="{Binding ClearOut}" Content="C"/>
+                Command="{Binding ClearStr}" Content="C"/>
 
         <Button BorderBrush="Transparent"  FontSize="20"    Grid.Row="1" Grid.Column="1" 
-                Command="{Binding  DeleteChar}" Content="CE"/>
+                Command="{Binding  Backspace}" Content="CE"/>
 
         <Button BorderBrush="Transparent" FontSize="20"    x:Name="LeftArrow" Grid.Row="1" Grid.Column="2" Content="("
                 Command="{Binding AddNumber}"
