@@ -17,9 +17,6 @@ namespace wpf_calc
         private static CalcModel _calcModel = new CalcModel();
 
         public event PropertyChangedEventHandler PropertyChanged;
-        private readonly Dictionary<string, List<string>> _errorsByPropertyName = new Dictionary<string, List<string>>();
-
-        CommandBinding commandBinding = new CommandBinding();
 
 
         public string ParseStr
@@ -52,9 +49,8 @@ namespace wpf_calc
             {
                 return new RelayCommand(obj =>
                   {
-                        char[] pattern = { '+', '-', '/', '*' };
                         string operation = obj as string;
-                        if(ParseStr is null){
+                        if(ParseStr is null || ParseStr == ""){
                             if(operation == "-"){
                                 ParseStr += operation;
                             }
