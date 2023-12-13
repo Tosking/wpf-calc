@@ -16,6 +16,8 @@ namespace wpf_calc
 
         private static CalcModel _calcModel = new CalcModel();
 
+        private static MemoryDB _memory = new MemoryDB(); 
+
         public event PropertyChangedEventHandler PropertyChanged;
 
 
@@ -56,7 +58,7 @@ namespace wpf_calc
                             }
                         }
 
-                        else if ("+-/*,".Contains(ParseStr[ParseStr.Length - 1].ToString()))
+                        else if ("+-/*.".Contains(ParseStr[ParseStr.Length - 1].ToString()))
                         {
                             return;
                         }
@@ -101,6 +103,41 @@ namespace wpf_calc
                           ParseStr += number;
                       else
                         ParseStr = number;
+                  });
+            }
+        }
+
+        public RelayCommand SaveMemory
+        {
+            get
+            {
+                return new RelayCommand(obj =>
+                  {
+                      _memory.Save(ParseStr);
+                  });
+            }
+        }
+
+        public RelayCommand ReadMemory
+        {
+            get
+            {
+                return new RelayCommand(obj =>
+                  {
+                    if(_memory.Read() == "")
+                        return;
+                    ParseStr += "(" + _memory.Read() + ")";
+                  });
+            }
+        }
+
+        public RelayCommand ClearMemory
+        {
+            get
+            {
+                return new RelayCommand(obj =>
+                  {
+                    _memory.Clear();
                   });
             }
         }

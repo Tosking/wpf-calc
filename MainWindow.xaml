@@ -103,7 +103,7 @@
     </Window.InputBindings>
     <Grid  Margin="10,10,10,10">
         <Grid.RowDefinitions>
-            
+            <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
@@ -140,103 +140,106 @@
 
         </Border>
 
-
-
-
-
         <Button BorderBrush="Transparent" FontSize="20"   Grid.Row="1" Grid.Column="0" 
+                Command="{Binding SaveMemory}" Content="MS"/>
+        <Button BorderBrush="Transparent" FontSize="20"   Grid.Row="1" Grid.Column="1" 
+                Command="{Binding ReadMemory}" Content="MR"/>
+        <Button BorderBrush="Transparent" FontSize="20"   Grid.Row="1" Grid.Column="2" 
+                Command="{Binding ClearMemory}" Content="MC"/>
+
+        <Button BorderBrush="Transparent" FontSize="20"   Grid.Row="2" Grid.Column="0" 
                 Command="{Binding ClearStr}" Content="C"/>
 
-        <Button BorderBrush="Transparent"  FontSize="20"    Grid.Row="1" Grid.Column="1" 
+        <Button BorderBrush="Transparent"  FontSize="20"    Grid.Row="2" Grid.Column="1" 
                 Command="{Binding  Backspace}" Content="CE"/>
 
-        <Button BorderBrush="Transparent" FontSize="20"    x:Name="LeftArrow" Grid.Row="1" Grid.Column="2" Content="("
+        <Button BorderBrush="Transparent" FontSize="20"    x:Name="LeftArrow" Grid.Row="2" Grid.Column="2" Content="("
                 Command="{Binding AddNumber}"
                 CommandParameter="{Binding ElementName=LeftArrow,Path=Content}"
                 />
-        <Button BorderBrush="Transparent"  FontSize="20"   x:Name="RightArrow" Grid.Row="1" Grid.Column="3"
+        <Button BorderBrush="Transparent"  FontSize="20"   x:Name="RightArrow" Grid.Row="2" Grid.Column="3"
                 Command="{Binding AddNumber}"
                 
                 CommandParameter="{Binding ElementName=RightArrow,Path=Content}"
                 Content=")"/>
 
-        <Button BorderBrush="Transparent" FontSize="20"    x:Name="Button7" Grid.Row="2" 
+        <Button BorderBrush="Transparent" FontSize="20"    x:Name="Button7" Grid.Row="3" 
                  Grid.Column="0" Command="{Binding  AddNumber}"
                  CommandParameter="{Binding ElementName=Button7,Path=Content}"
                  Content="7" />
 
-        <Button BorderBrush="Transparent"  FontSize="20"   x:Name="Button8"  Grid.Row="2" Grid.Column="1" Command="{Binding  AddNumber}"
+        <Button BorderBrush="Transparent"  FontSize="20"   x:Name="Button8"  Grid.Row="3" Grid.Column="1" Command="{Binding  AddNumber}"
                 CommandParameter="{Binding ElementName=Button8,Path=Content}"
                 Content="8"/>
 
-        <Button BorderBrush="Transparent"  FontSize="20"   x:Name="Button9"  Grid.Row="2" Grid.Column="2" Command="{Binding  AddNumber}"
+        <Button BorderBrush="Transparent"  FontSize="20"   x:Name="Button9"  Grid.Row="3" Grid.Column="2" Command="{Binding  AddNumber}"
                 CommandParameter="{Binding ElementName=Button9,Path=Content}"
                 Content="9"/>
 
-        <Button BorderBrush="Transparent" FontSize="20"   x:Name="ButtonMul" Grid.Row="2" Grid.Column="3"
+        <Button BorderBrush="Transparent" FontSize="20"   x:Name="ButtonMul" Grid.Row="3" Grid.Column="3"
                 Command="{Binding AddOper}"
                 
                 CommandParameter="{Binding ElementName=ButtonMul,Path=Content}"
                 Content="*"/>
 
-        <Button BorderBrush="Transparent" FontSize="20"   x:Name="Button4" Grid.Row="3" Grid.Column="0" Command="{Binding  AddNumber}"
+        <Button BorderBrush="Transparent" FontSize="20"   x:Name="Button4" Grid.Row="4" Grid.Column="0" Command="{Binding  AddNumber}"
                 CommandParameter="{Binding ElementName=Button4,Path=Content}"
                  Content="4" />
 
-        <Button BorderBrush="Transparent"  FontSize="20"   x:Name="Button5" Grid.Row="3" Grid.Column="1" 
+        <Button BorderBrush="Transparent"  FontSize="20"   x:Name="Button5" Grid.Row="4" Grid.Column="1" 
                  Command="{Binding  AddNumber}"
                  CommandParameter="{Binding ElementName=Button5,Path=Content}"
                  Content="5"/>
 
-        <Button BorderBrush="Transparent" FontSize="20"    x:Name="Button6"  Grid.Row="3" Grid.Column="2" 
+        <Button BorderBrush="Transparent" FontSize="20"    x:Name="Button6"  Grid.Row="4" Grid.Column="2" 
                 Command="{Binding  AddNumber}"
                 CommandParameter="{Binding ElementName=Button6,Path=Content}"
                 Content="6"/>
 
-        <Button BorderBrush="Transparent" FontSize="20"    x:Name="ButtonSub" Grid.Row="3" Grid.Column="3" 
+        <Button BorderBrush="Transparent" FontSize="20"    x:Name="ButtonSub" Grid.Row="4" Grid.Column="3" 
                 Command="{Binding AddOper}"
                 CommandParameter="{Binding ElementName=ButtonSub,Path=Content}"
                 
                 Content="-"/>
 
-        <Button BorderBrush="Transparent" FontSize="20"   x:Name="Button1" Grid.Row="4" 
+        <Button BorderBrush="Transparent" FontSize="20"   x:Name="Button1" Grid.Row="5" 
                 Command="{Binding  AddNumber}"
                 CommandParameter="{Binding ElementName=Button1,Path=Content}"
                 Grid.Column="0" Content="1"/>
 
-        <Button BorderBrush="Transparent" FontSize="20"   x:Name="Button2" Grid.Row="4" 
+        <Button BorderBrush="Transparent" FontSize="20"   x:Name="Button2" Grid.Row="5" 
                 Command="{Binding  AddNumber}"
                 CommandParameter="{Binding ElementName=Button2,Path=Content}"
                 Grid.Column="1" Content="2"/>
 
-        <Button BorderBrush="Transparent" FontSize="20"   x:Name="Button3" Grid.Row="4" 
+        <Button BorderBrush="Transparent" FontSize="20"   x:Name="Button3" Grid.Row="5" 
                 Command="{Binding  AddNumber}"
                 CommandParameter="{Binding ElementName=Button3,Path=Content}"
                 Grid.Column="2" Content="3"/>
 
-        <Button BorderBrush="Transparent" FontSize="20"   x:Name="ButtonSum" Grid.Row="4" Grid.Column="3" 
+        <Button BorderBrush="Transparent" FontSize="20"   x:Name="ButtonSum" Grid.Row="5" Grid.Column="3" 
                  Command="{Binding AddOper}"
                  CommandParameter="{Binding ElementName=ButtonSum,Path=Content}"
                 
                  Content="+"/>
 
-        <Button BorderBrush="Transparent" FontSize="20"  x:Name="Button0" Grid.Row="5" 
+        <Button BorderBrush="Transparent" FontSize="20"  x:Name="Button0" Grid.Row="6" 
                 Command="{Binding  AddNumber}"
                 CommandParameter="{Binding  ElementName=Button0,Path=Content}"
                 Grid.Column="0"  Content="0" />
 
-        <Button BorderBrush="Transparent" FontSize="20"   x:Name="Comma" Grid.Row="5" 
+        <Button BorderBrush="Transparent" FontSize="20"   x:Name="Comma" Grid.Row="6" 
                 Command="{Binding  AddOper}"
                 CommandParameter="{Binding ElementName=Comma,Path=Content}"
                 
-                Grid.Column="1"  Content="," />
+                Grid.Column="1"  Content="." />
 
-        <Button BorderBrush="Transparent"  FontSize="20"  x:Name="ButtonDiv" Grid.Row="5" Grid.Column="3" Content="/"
+        <Button BorderBrush="Transparent"  FontSize="20"  x:Name="ButtonDiv" Grid.Row="6" Grid.Column="3" Content="/"
                 Command="{Binding AddOper}"
                 
                 CommandParameter="{Binding ElementName=ButtonDiv,Path=Content}"
                 
                 />
-        <Button BorderBrush="Transparent" FontSize="20"  Grid.Row="5" Grid.Column="2" Content="=" Command="{Binding StartParsing}"/>
+        <Button BorderBrush="Transparent" FontSize="20"  Grid.Row="6" Grid.Column="2" Content="=" Command="{Binding StartParsing}"/>
     </Grid>
 </Window>
