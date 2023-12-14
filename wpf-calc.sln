@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wpf-calc", "wpf-calc/wpf-calc.csproj", "{EA5372EB-3078-46FC-AB4D-5501FD094F7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wpf-calc", "wpf-calc\wpf-calc.csproj", "{EA5372EB-3078-46FC-AB4D-5501FD094F7E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject1", "UnitTest/TestProject1.csproj", "{B1A66E5F-1BB3-417B-9E12-242E08F7C899}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "UnitTest\TestProject1.csproj", "{3BB74786-8973-483B-BDEC-23CDF9958AD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +17,10 @@ Global
 		{EA5372EB-3078-46FC-AB4D-5501FD094F7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA5372EB-3078-46FC-AB4D-5501FD094F7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA5372EB-3078-46FC-AB4D-5501FD094F7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BB74786-8973-483B-BDEC-23CDF9958AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BB74786-8973-483B-BDEC-23CDF9958AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BB74786-8973-483B-BDEC-23CDF9958AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BB74786-8973-483B-BDEC-23CDF9958AD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
