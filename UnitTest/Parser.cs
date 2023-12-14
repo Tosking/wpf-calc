@@ -28,7 +28,7 @@ public class Parser {
             for(int i = 0; i < str.Length; i++){
                 string c = str[i].ToString();
 
-                if(int.TryParse(c, out int n) || c == ","){
+                if(int.TryParse(c, out int n) || c == "."){
                     if(posWithoutNum > 1 || (posWithoutNum == 1 && i == 1 && "+-".Contains(str[i - 1]))){
                         temp += str[i - 1];
                     }
@@ -108,6 +108,6 @@ public class Parser {
                     elements.RemoveAll(item => item == null);
                 }
             }
-            return result.ToString();
+            return Math.Round(result, 5).ToString();
         }
     }

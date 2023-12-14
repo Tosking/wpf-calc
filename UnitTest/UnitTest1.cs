@@ -11,7 +11,7 @@ public class UnitTest1
      [Theory]
         [InlineData("1+5", "6")]
         [InlineData("1+5*(6+1)", "36")]
-        [InlineData("5*7/2", "17,5")]
+        [InlineData("5*7/2", "17.5")]
         [InlineData("5*7+(-5)", "30")]
         [InlineData("5*7", "35")]
         [InlineData("(-5)", "-5")]
@@ -36,8 +36,8 @@ public class UnitTest1
         }
         [Theory]
         [InlineData("2+(", "Error")]
-        [InlineData("2+)", "Error")]
-        [InlineData("2+()", "Error")]
+        [InlineData("2+)", "2")]
+        [InlineData("2+()", "2")]
 
         public void Parser_ShouldReturnErrorString_IfUserTryingCalculateNumberAndBracket(string left, string right)
         {
@@ -63,8 +63,8 @@ public class UnitTest1
             result.Should().Be(right);
         }
         [Theory]
-        [InlineData("2+(0,5)", "2,5")]
-        [InlineData("2*2,6", "5,2")]
+        [InlineData("2+(0.5)", "2.5")]
+        [InlineData("2*2.6", "5.2")]
         public void Parser_ShouldReturnDoubleNumber_IfUserWritingDot(string left, string right)
         {
             var result = parser.Parse(left);

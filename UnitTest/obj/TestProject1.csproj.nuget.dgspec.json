@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\wpf-calc\\UnitTest\\TestProject1.csproj": {}
+    "/home/taskavan/.wine/drive_c/wpf-calc/UnitTest/TestProject1.csproj": {}
   },
   "projects": {
-    "C:\\wpf-calc\\UnitTest\\TestProject1.csproj": {
+    "/home/taskavan/.wine/drive_c/wpf-calc/UnitTest/TestProject1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\wpf-calc\\UnitTest\\TestProject1.csproj",
+        "projectUniqueName": "/home/taskavan/.wine/drive_c/wpf-calc/UnitTest/TestProject1.csproj",
         "projectName": "TestProject1",
-        "projectPath": "C:\\wpf-calc\\UnitTest\\TestProject1.csproj",
-        "packagesPath": "C:\\users\\taskavan\\.nuget\\packages\\",
-        "outputPath": "C:\\wpf-calc\\UnitTest\\obj\\",
+        "projectPath": "/home/taskavan/.wine/drive_c/wpf-calc/UnitTest/TestProject1.csproj",
+        "packagesPath": "/home/taskavan/.nuget/packages/",
+        "outputPath": "/home/taskavan/.wine/drive_c/wpf-calc/UnitTest/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\users\\taskavan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/taskavan/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "/usr/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -77,15 +78,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
+              "version": "[7.0.13, 7.0.13]"
             }
           ],
           "frameworkReferences": {
@@ -93,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
         }
       }
     }
