@@ -1,0 +1,579 @@
+{
+  "version": 2,
+  "dgSpecHash": "edHgl6gpDnwFtoyD9XzX+pK7/sj6G/M6HK3LSgtehhaejDnl4lucUYiXwmCRaqAR298B0Uw+W5Pw9lhgtKqNQQ==",
+  "success": false,
+  "projectFilePath": "C:\\wpf-calc\\Calculator-UnitTest\\TestProject1.csproj",
+  "expectedPackageFiles": [
+    "C:\\users\\taskavan\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\users\\taskavan\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\users\\taskavan\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\users\\taskavan\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
+    "C:\\users\\taskavan\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
+    "C:\\users\\taskavan\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\users\\taskavan\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.4.0\\system.security.cryptography.protecteddata.4.4.0.nupkg.sha512",
+    "C:\\users\\taskavan\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
+    "C:\\users\\taskavan\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU3034",
+      "level": "Error",
+      "message": "Пакет \"Microsoft.AspNetCore.App.Ref 7.0.14\" из источника \"https://api.nuget.org/v3/index.json\": Этот пакет подписан, но не надежным подписавшим лицом.",
+      "libraryId": "Microsoft.AspNetCore.App.Ref"
+    },
+    {
+      "code": "NU3034",
+      "level": "Error",
+      "message": "Пакет \"Microsoft.WindowsDesktop.App.Ref 7.0.14\" из источника \"https://api.nuget.org/v3/index.json\": Этот пакет подписан, но не надежным подписавшим лицом.",
+      "libraryId": "Microsoft.WindowsDesktop.App.Ref"
+    },
+    {
+      "code": "NU3034",
+      "level": "Error",
+      "message": "Пакет \"Microsoft.NETCore.App.Ref 7.0.14\" из источника \"https://api.nuget.org/v3/index.json\": Этот пакет подписан, но не надежным подписавшим лицом.",
+      "libraryId": "Microsoft.NETCore.App.Ref"
+    },
+    {
+      "code": "NU3034",
+      "level": "Error",
+      "message": "Пакет \"FluentAssertions 6.12.0\" из источника \"https://api.nuget.org/v3/index.json\": Этот пакет подписан, но не надежным подписавшим лицом.",
+      "libraryId": "FluentAssertions"
+    },
+    {
+      "code": "NU3034",
+      "level": "Error",
+      "message": "Пакет \"xunit 2.4.2\" из источника \"https://api.nuget.org/v3/index.json\": Этот пакет подписан, но не надежным подписавшим лицом.",
+      "libraryId": "xunit"
+    },
+    {
+      "code": "NU3034",
+      "level": "Error",
+      "message": "Пакет \"xunit.runner.visualstudio 2.4.5\" из источника \"https://api.nuget.org/v3/index.json\": Этот пакет подписан, но не надежным подписавшим лицом.",
+      "libraryId": "xunit.runner.visualstudio"
+    },
+    {
+      "code": "NU3034",
+      "level": "Error",
+      "message": "Пакет \"coverlet.collector 3.2.0\" из источника \"https://api.nuget.org/v3/index.json\": Этот пакет подписан, но не надежным подписавшим лицом.",
+      "libraryId": "coverlet.collector"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Threading.Tasks.Extensions 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Threading.Tasks.Extensions"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Security.Cryptography.Csp 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Security.Cryptography.Csp"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU3034",
+      "level": "Error",
+      "message": "Пакет \"xunit.assert 2.4.2\" из источника \"https://api.nuget.org/v3/index.json\": Этот пакет подписан, но не надежным подписавшим лицом.",
+      "libraryId": "xunit.assert"
+    },
+    {
+      "code": "NU3034",
+      "level": "Error",
+      "message": "Пакет \"xunit.core 2.4.2\" из источника \"https://api.nuget.org/v3/index.json\": Этот пакет подписан, но не надежным подписавшим лицом.",
+      "libraryId": "xunit.core"
+    },
+    {
+      "code": "NU3034",
+      "level": "Error",
+      "message": "Пакет \"xunit.analyzers 1.0.0\" из источника \"https://api.nuget.org/v3/index.json\": Этот пакет подписан, но не надежным подписавшим лицом.",
+      "libraryId": "xunit.analyzers"
+    },
+    {
+      "code": "NU3034",
+      "level": "Error",
+      "message": "Пакет \"xunit.extensibility.core 2.4.2\" из источника \"https://api.nuget.org/v3/index.json\": Этот пакет подписан, но не надежным подписавшим лицом.",
+      "libraryId": "xunit.extensibility.core"
+    },
+    {
+      "code": "NU3034",
+      "level": "Error",
+      "message": "Пакет \"xunit.extensibility.execution 2.4.2\" из источника \"https://api.nuget.org/v3/index.json\": Этот пакет подписан, но не надежным подписавшим лицом.",
+      "libraryId": "xunit.extensibility.execution"
+    },
+    {
+      "code": "NU3034",
+      "level": "Error",
+      "message": "Пакет \"xunit.abstractions 2.0.3\" из источника \"https://api.nuget.org/v3/index.json\": Этот пакет подписан, но не надежным подписавшим лицом.",
+      "libraryId": "xunit.abstractions"
+    },
+    {
+      "code": "NU3034",
+      "level": "Error",
+      "message": "Пакет \"Newtonsoft.Json 13.0.1\" из источника \"https://api.nuget.org/v3/index.json\": Этот пакет подписан, но не надежным подписавшим лицом.",
+      "libraryId": "Newtonsoft.Json"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Security.Cryptography.Cng 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Security.Cryptography.Cng"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"runtime.native.System.Security.Cryptography.Apple 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "runtime.native.System.Security.Cryptography.Apple"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Configuration.ConfigurationManager 4.4.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Configuration.ConfigurationManager"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"NETStandard.Library 1.6.1\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "NETStandard.Library"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"Microsoft.Win32.Primitives 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "Microsoft.Win32.Primitives"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.AppContext 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.AppContext"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Collections 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Collections"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Collections.Concurrent 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Collections.Concurrent"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Console 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Console"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Diagnostics.Debug 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Diagnostics.Debug"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Diagnostics.Tracing 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Diagnostics.Tracing"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Diagnostics.Tools 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Diagnostics.Tools"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Globalization 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Globalization"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Globalization.Calendars 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Globalization.Calendars"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.IO.Compression 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.IO.Compression"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.IO.Compression.ZipFile 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.IO.Compression.ZipFile"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Security.Cryptography.OpenSsl 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.IO.FileSystem 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.IO.FileSystem"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.IO.FileSystem.Primitives 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.IO.FileSystem.Primitives"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Reflection.Metadata 1.6.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись автора: истек срок действия.",
+      "libraryId": "System.Reflection.Metadata"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Reflection.Metadata 1.6.0\" из источника \"https://api.nuget.org/v3/index.json\": подпись другой стороны репозитория: истек срок действия.",
+      "libraryId": "System.Reflection.Metadata"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Linq 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Linq"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Linq.Expressions 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Linq.Expressions"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.ObjectModel 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.ObjectModel"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Net.Sockets 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Net.Sockets"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Net.Primitives 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Net.Primitives"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Reflection.Extensions 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Reflection.Extensions"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Resources.ResourceManager 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Resources.ResourceManager"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Net.Http 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Net.Http"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Runtime.Extensions 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Runtime.Extensions"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Runtime.Handles 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Runtime.Handles"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Runtime.InteropServices 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Runtime.InteropServices"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Runtime.InteropServices.RuntimeInformation 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Runtime.InteropServices.RuntimeInformation"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Globalization.Extensions 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Globalization.Extensions"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Runtime.Numerics 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Runtime.Numerics"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Security.Cryptography.Encoding 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Security.Cryptography.Encoding"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Security.Cryptography.Algorithms 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Security.Cryptography.Algorithms"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Text.Encoding.Extensions 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Text.Encoding.Extensions"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Security.Cryptography.Primitives 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Security.Cryptography.Primitives"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Security.Cryptography.X509Certificates 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Security.Cryptography.X509Certificates"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Text.RegularExpressions 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Text.RegularExpressions"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Threading 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Threading"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Threading.Timer 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Threading.Timer"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Xml.XDocument 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Xml.XDocument"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Xml.ReaderWriter 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Xml.ReaderWriter"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"runtime.native.System 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "runtime.native.System"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Buffers 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Buffers"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"runtime.native.System.IO.Compression 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "runtime.native.System.IO.Compression"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Reflection.Emit 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Reflection.Emit"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Reflection.Emit.ILGeneration 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Reflection.Emit.ILGeneration"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Reflection.Emit.Lightweight 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Reflection.Emit.Lightweight"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Reflection.TypeExtensions 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Reflection.TypeExtensions"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"runtime.native.System.Net.Http 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "runtime.native.System.Net.Http"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"runtime.native.System.Security.Cryptography.OpenSsl 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Diagnostics.DiagnosticSource 4.3.0\" из источника \"https://api.nuget.org/v3/index.json\": основная подпись репозитория: истек срок действия.",
+      "libraryId": "System.Diagnostics.DiagnosticSource"
+    }
+  ]
+}

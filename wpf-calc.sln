@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wpf-calc", "wpf-calc/wpf-calc.csproj", "{EA5372EB-3078-46FC-AB4D-5501FD094F7E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject1", "Calculator-UnitTest/TestProject1.csproj", "{B1A66E5F-1BB3-417B-9E12-242E08F7C899}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject1", "UnitTest/TestProject1.csproj", "{B1A66E5F-1BB3-417B-9E12-242E08F7C899}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
